@@ -16,7 +16,14 @@ class ExceptionDivision {
         catch(ArithmeticException e) 
         { 
             System.out.println("exception caught: Divide by zero error"+e);
-        } 
+        }
+        int array[]={2,3,4,5,6};
+        try
+        {
+            System.out.println("input two integers"+array[5]);
+        }
+        catch(ArrayIndexOutOfBoundsException e1){
+            System.out.println("array index out of bound"+e1);
+        }
 } 
 }
-
